@@ -7,22 +7,23 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel ="stylesheet" href="style.css"/>
+        <link rel ="stylesheet" href="stylesheet.css"/>
         <script src="jquery.js"></script>
-        <script src="script.js"></script>
+        <script src="client.js"></script>
         <h1>Server Side Calculator</h1>
     </head>
     <body>
 
-        <input id ="first-numbeer" type= "text" placeholder=""></input>
-        <button id = "plus-button">+</button>
-        <button id = "minus-button">-</button>
-        <button id = "multiply-button">*</button>
-        <button id = "division-button">/</button>
-        <input id ="second-number" type="text" placeholder=""></input>
+        <input id ="first-input" type= "number" placeholder=""></input>
+        <button class = "plus-button">+</button>
+        <button class= "minus-button">-</button>
+        <button class = "multiply-button">*</button>
+        <button class = "division-button">/</button>
+        <input id ="second-input" type="number" placeholder=""></input>
         <button id ="equal-button">=</button>
         <button id = "clear-button">C</button>
 
         <h2>Response</h2>
+        <ul id= calculations-history></ul>
     </body>
 </html>

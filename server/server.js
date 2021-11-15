@@ -8,7 +8,7 @@ app.use(express.static('server/public'));
 
 app.get("/",(req,res)=>{
     console.log('in Get /')
-    res.status(200);
+    res.sendStatus(200);
 })
 
 app.get('/calculations', (req,res)=>{
@@ -18,10 +18,11 @@ app.get('/calculations', (req,res)=>{
 
 const answers = [];
 
-answers.push(req.body);
 
 app.post('/calculations',(req,res)=>{
     console.log('in POST /calculations');
+    renderCalculations();
+    createResult();
     answers.push(req.body);
     res.send(answers);
 });

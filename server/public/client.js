@@ -3,7 +3,6 @@ $(document).ready(onReady);
 function onReady(){
     console.log('in OnReady');
     $('#equal-button').on('click', handleEqualButtonClick)
-
 }
 
 function identifyOperand (operand){
@@ -40,7 +39,7 @@ function handleEqualButtonClick(){
         firstInput:$('#first-input').val(),
         operand: identifyOperand(),
         secondInput:$('#second-input').val(),
-        result: createResult(),
+        // result: createResult(),
     }
     $.ajax({
         method: 'POST',
